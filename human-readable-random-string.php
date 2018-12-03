@@ -1,3 +1,4 @@
+<?php
 /************** 
 *@length - length of random string (must be a multiple of 2) 
 **************/  
@@ -15,3 +16,4 @@ function readable_random_string($length = 6){
     }  
     return $password;  
 }  
+?>
