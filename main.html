@@ -1,0 +1,80 @@
+<!doctype HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+
+<title>Opt-in form</title>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<meta name="keywords" content="keywords go here">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script> <!-- renders captcha -->
+<style>
+<!--
+  input { color: #444444; font-weight: bold }
+  .checkbox { color: #444444; font-weight: bold; font-size: 12px }
+  .fieldname { color: #444444; font-size: 14px; font-weight: bold; text-align: right }
+  .fine { color: #8b8b8b; font-size: 12px; font-weight: bold }
+  .notice { color: #cc0e08; font-size: 12px; font-weight: bold; padding-left: 8px }
+-->
+</style>
+  
+</head>
+<body leftMargin="0" topMargin="0">
+<div class="content" style="margin: 10px auto; width: 700px">
+<p align="center"><img src="/images/header.png" /></p>
+<h3>About the form</h3>
+<h5>More about the form</h5>
+<p style="margin-top: 10px; margin-bottom: 0px; margin-left: 10px"><b>Please complete the following form.</b></p>
+<form method="POST" action="functions.php" name="" language="JavaScript">
+<table align="center" border="0" cellpadding="2" cellspacing="2" width="100%">
+  <tbody>
+    <tr>
+	  <td colspan="3" class="notice"><b>*Important - In order to process your request, we need the following information:</b></td>
+	</tr>
+  <tr>
+	  <td class="fieldname">Name:</td>
+	  <td><input type="text" name="name" size="35" required /></td>
+	</tr>
+	<tr>
+	  <td class="fieldname">Company Name:</td>
+	  <td><input type="text" name="company" size="35"></td>
+	</tr>
+	<tr>
+	  <td class="fieldname" valign="top">Address:</td>
+	  <td><input type="text" name="address" size="35" required /><br />
+    <input type="text" name="address2" size="35"></td>
+	</tr>
+	<tr>
+	  <td class="fieldname">City:</td>
+	  <td><input type="text" name="city" size="35" required /></td>
+	</tr>
+    <tr>
+	  <td class="fieldname">State/Province:</td>
+	  <td><input type="text" name="state" size="35" required /></td>
+	</tr>
+	<tr>
+	  <td class="fieldname">Zip/Postal Code:</td>
+	  <td><input type="text" name="zip" size="35" required /></td>
+	</tr>
+	<tr>
+	  <td class="fieldname">Phone:</td>
+	  <td><input type="text" name="phone" size="35" required /></td>
+	</tr>
+	<tr>
+	  <td class="fieldname">Email:</td>
+	  <td><input type="text" name="cust_email" size="35" required /></td>
+	</tr>
+  </tbody>
+</table>
+  <div class="captcha-verify center-fluid">
+  <div class="g-recaptcha" data-sitekey="your_site_key_goes_here"></div>
+  </div>
+  <br />
+  <input type="submit" value="SUBMIT" name="B1" class="button" onmouseover="this.className='buttonhover'" onmouseout="this.className='button'">
+  <input type="reset" value="RESET" name="B2" class="button">
+</form>
+</div>
+</body>
+</html>
